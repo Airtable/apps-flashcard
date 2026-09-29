@@ -23,7 +23,7 @@ export default function FlashcardContainer({records, settings}) {
     }
 
     function handleNewRecord() {
-        setRecord(_.sample(records.filter(r => r !== record && !removedRecordsSet.has(r))));
+        setRecord(_.sample(records.filter((r) => r !== record && !removedRecordsSet.has(r))));
     }
 
     function reset() {
